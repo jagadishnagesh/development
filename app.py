@@ -14,7 +14,7 @@ api = Api(app)
 jwt = JWT(app, authenticate, identity)
 
 api.add_resource(Queries, '/query/<string:name>')
-api.add_resource(Querylist, '/querylist')
+api.add_resource(Querylist, '/queries')
 api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
